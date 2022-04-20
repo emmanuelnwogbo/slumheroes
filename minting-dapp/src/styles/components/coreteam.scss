@@ -36,6 +36,10 @@
     &--labels {
       display: inline-block;
       margin-top: #{scaleValue(30)};
+
+      & p {
+        font-size: #{scaleValue(18)};
+      }
     }
   }
 }

@@ -20,3 +20,18 @@ body {
 html {
   font-family: 'Poppins', sans-serif;
 }
+
+.desktop {
+  @media only screen and (max-width: 414px) { 
+    display: none;
+    //padding: #{scaleValue(75)} #{scaleValue(75)};
+  } 
+}
+
+.mobile {
+  display: none;
+  
+  @media only screen and (max-width: 414px) { 
+    display: block;
+  } 
+}

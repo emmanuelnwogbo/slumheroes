@@ -1,0 +1,28 @@
+.mobileheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: #{scaleValue(130)} 0;
+
+  &__left {
+
+    & figure {
+      width: #{scaleValue(600)};
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & span {
+      display: inline-block;
+      background: #fff;
+      margin-bottom: #{scaleValue(17)};
+      height: #{scaleValue(10)};
+      width: #{scaleValue(96)};
+      border-radius: 2rem;
+    }
+  }
+}

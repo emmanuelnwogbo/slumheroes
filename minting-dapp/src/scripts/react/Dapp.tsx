@@ -12,6 +12,7 @@ import Mission from './Mission';
 import Faq from './Faq';
 import CoreTeam from './CoreTeam';
 import Footer from './Footer';
+import MobileHeader from './mobile/MobileHeader';
 import CollectionStatus from './CollectionStatus';
 import MintWidget from './MintWidget';
 import Whitelist from '../lib/Whitelist';
@@ -162,6 +163,9 @@ export default class Dapp extends React.Component<Props, State> {
           <Faq />
           <CoreTeam />
           <Footer />
+        </div>
+        <div className="mobile">
+          <MobileHeader />
         </div>
       </>
     );
