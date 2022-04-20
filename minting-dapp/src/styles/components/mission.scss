@@ -11,15 +11,47 @@
 .mission {
   margin-top: #{scaleValue(130)};
   position: relative;
+  height: #{scaleValue(550)};
 
   &__h2 {
     font-size: #{scaleValue(50)};
     margin-bottom: #{scaleValue(60)};
   }
 
+  &__slides {
+    display: flex;
+    position: relative;
+  }
+
   &__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: #{scaleValue(500)};
+    flex-shrink: 0;
+    opacity: 0;
+    transition: all .4s ease-in;
+    background: #1F1D2B;
+    z-index: 1;
+
+    &.currentthing {
+      opacity: 1;
+    }
+
+    &.notcurrentthing {
+      transform: translateX(100%);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &.previousthing {
+      transform: translateX(-100%);
+      opacity: 0;
+      z-index: -1;
+    }
   }
 
   &__slideleft {
@@ -55,6 +87,7 @@
     bottom: 0;
     left: 0;
     animation: next 1s ease-in-out infinite alternate;
+    z-index: 2;
 
 
     & figure {
