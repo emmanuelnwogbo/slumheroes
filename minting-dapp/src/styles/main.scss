@@ -1,0 +1,16 @@
+:root {
+  --ideal-viewport-width: 1600;
+}
+
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+@import './components/general.scss';
+@import './components/header.scss';
+@import './components/jumbotron.scss';
+@import './components/story.scss';
+@import './components/mission.scss';
+@import './components/faq.scss';
+@import './components/coreteam.scss';
+@import './components/footer.scss';

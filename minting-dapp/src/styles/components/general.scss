@@ -1,0 +1,22 @@
+@function scaleValue($value) {
+  @return calc(
+    #{$value} * (clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width))
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    background: #1F1D2B;
+    padding: 0 #{scaleValue(90)};
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}

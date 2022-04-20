@@ -1,0 +1,41 @@
+.coreteam {
+  margin-top: #{scaleValue(130)};
+  padding-bottom: #{scaleValue(350)};
+
+  &__title {
+
+    &--h2 {
+      text-align: center;
+      font-size: #{scaleValue(30)};
+      text-transform: uppercase;
+      margin-bottom: #{scaleValue(60)};
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: #{scaleValue(330)};
+
+    & figure {
+      width: 100%;
+      height: #{scaleValue(330)};
+      overflow: hidden;
+      border-radius: 1rem;
+
+      & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &--labels {
+      display: inline-block;
+      margin-top: #{scaleValue(30)};
+    }
+  }
+}

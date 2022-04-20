@@ -1,0 +1,36 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: #{scaleValue(25)} 0;
+  padding-bottom: #{scaleValue(80)};
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #F2F2F2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .5px;
+  }
+
+  &__left {
+    display: flex;
+
+    & span {
+      display: inline-block;
+      margin-right: #{scaleValue(30)};
+      cursor: pointer;
+      color: #F2F2F2;
+    }
+  }
+
+  &__right {
+    
+    & p {
+      color: #F2F2F2;
+      opacity: .6;
+    }
+  }
+}

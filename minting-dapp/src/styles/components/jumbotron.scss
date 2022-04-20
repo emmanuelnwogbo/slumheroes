@@ -1,0 +1,86 @@
+@keyframes hover {
+  0% {
+    transform: translateY(#{scaleValue(-80)});
+  }
+  
+  100% {
+    transform: translateY(#{scaleValue(-70)});
+  }
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  height: #{scaleValue(820)};
+  padding-top: #{scaleValue(230)};
+
+  &__left {
+    width: #{scaleValue(800)};
+
+    &--h2 {
+      font-size: #{scaleValue(54)};
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: #{scaleValue(35)};
+    }
+
+    &--paragraph {
+      display: inline-block;
+      font-size: #{scaleValue(24)};
+      color:rgba(188, 188, 188, 1);
+      margin-bottom: #{scaleValue(75)};
+    }
+
+    &--btns {
+
+      & button,
+      &:focus {
+        outline: none;
+        cursor: pointer;
+        border: none;
+      }
+    }
+
+    &--learnmorebtn {
+      background: linear-gradient(to right bottom,rgba(155, 81, 224, 1),rgba(48, 129, 237, 0.8));
+      border-radius: .5rem;
+      padding: #{scaleValue(10)} #{scaleValue(30)};
+      font-size: #{scaleValue(22)}
+    }
+  }
+
+  &__right {
+    position: relative;
+    
+    & figure {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: #{scaleValue(487)};
+      width: #{scaleValue(482)};
+      transform: translateY(#{scaleValue(-70)});
+      animation: hover 1s ease-in-out infinite alternate;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &:nth-child(2) {
+        border-radius: 1rem;
+        overflow: hidden;
+
+        & img {
+          border-radius: 1.5rem;
+          height: #{scaleValue(410)};
+          width: #{scaleValue(400)};
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

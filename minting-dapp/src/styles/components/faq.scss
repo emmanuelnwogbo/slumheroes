@@ -1,0 +1,43 @@
+.faq {
+  margin-top: #{scaleValue(130)};
+
+  &__title {
+
+    &--h2 {
+      text-transform: uppercase;
+      font-size: #{scaleValue(47)};
+      text-align: center;
+      margin-bottom: #{scaleValue(47)};
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right bottom,rgba(155, 81, 224, 0.4),rgba(48, 129, 237, 0.32));
+    font-size: #{scaleValue(30)};
+    padding: #{scaleValue(60)} #{scaleValue(47)};
+    padding-bottom: #{scaleValue(30)};
+    border-radius: 1.5rem;
+  }
+
+  &__btn {
+    margin-top: #{scaleValue(60)};
+
+    & button,
+    &:focus {
+      outline: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    &--btn {
+      background: linear-gradient(to right bottom,rgba(155, 81, 224, 1),rgba(48, 129, 237, 0.8));
+      border-radius: .5rem;
+      padding: #{scaleValue(10)} #{scaleValue(30)};
+      font-size: #{scaleValue(22)}
+    }
+  }
+}
