@@ -1,3 +1,13 @@
+@keyframes next {
+  0% {
+    transform: translateX(#{scaleValue(10)});
+  }
+  
+  100% {
+    transform: translateX(#{scaleValue(0)});
+  }
+}
+
 .mission {
   margin-top: #{scaleValue(130)};
   position: relative;
@@ -44,6 +54,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    animation: next 1s ease-in-out infinite alternate;
 
 
     & figure {
