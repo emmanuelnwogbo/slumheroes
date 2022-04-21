@@ -5,11 +5,11 @@ interface Props {
 }
 
 interface State {
-
+  sidenavopen: boolean
 }
 
 const defaultState: State = {
-  
+  sidenavopen: false
 };
 
 export default class MobileHeader extends React.Component<Props, State> {
@@ -17,6 +17,20 @@ export default class MobileHeader extends React.Component<Props, State> {
     super(props);
 
     this.state = defaultState;
+  }
+
+  private sidenavToggle(): void{
+    if (this.state.sidenavopen) {
+      this.setState({
+        sidenavopen: false
+      });
+
+      return;
+    }
+
+    this.setState({
+      sidenavopen: true
+    })
   }
 
   render() {
@@ -28,10 +42,18 @@ export default class MobileHeader extends React.Component<Props, State> {
             <img src="/build/images/SlumHeroes.svg" alt="SVG as an image" />
           </figure>
         </div>
-        <div className="mobileheader__right">
+        <div className="mobileheader__right" onClick={() => this.sidenavToggle()}>
           <span></span>
           <span></span>
           <span></span>
+        </div>
+        <div className={this.state.sidenavopen ? 'mobileheader__sidenav open' : 'mobileheader__sidenav'} 
+          onClick={() => this.sidenavToggle()}>
+          <div className="mobileheader__sidenav--body">
+            <figure>
+              <img src="/build/images/SlumHeroes.svg" alt="SVG as an image" />
+            </figure>
+          </div>
         </div>
       </div>
       </>

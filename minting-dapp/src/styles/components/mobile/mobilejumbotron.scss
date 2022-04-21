@@ -1,0 +1,62 @@
+.mobilejumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: #{scaleValue(200)};
+
+  &__header {
+
+    & h1 {
+      text-transform: uppercase;
+      font-size: #{scaleValue(100)};
+      margin-bottom: #{scaleValue(200)};
+      font-weight: 500;
+    }
+  }
+
+  &__nftsample {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: #{scaleValue(1200)};
+    width: #{scaleValue(1200)};
+
+    & figure {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: #{scaleValue(1200)};
+      width: #{scaleValue(1200)};
+
+      &:nth-child(2) {
+        
+        & img {
+          height: #{scaleValue(1000)};
+          width: #{scaleValue(1000)};
+          border-radius: 1rem;
+        }
+      }
+
+      & img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__learnmore {
+    margin-top: #{scaleValue(200)};
+
+    & button {
+      outline: none;
+      cursor: pointer;
+      border: none;
+      background: linear-gradient(to right bottom,rgba(155, 81, 224, 1),rgba(48, 129, 237, 0.8));
+      border-radius: .5rem;
+      padding: #{scaleValue(47)} #{scaleValue(130)};
+      font-size: #{scaleValue(70)}
+    }
+  }
+}

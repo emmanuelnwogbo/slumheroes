@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: #{scaleValue(130)} 0;
+  position: relative;
+  z-index: 7;
 
   &__left {
 
@@ -23,6 +25,33 @@
       height: #{scaleValue(10)};
       width: #{scaleValue(96)};
       border-radius: 2rem;
+    }
+  }
+
+  &__sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: #{scaleValue(1000)};
+    width: 100vw;
+    background: rgba(#1F1D2B, .4);
+    transform: translateX(-100%);
+    transition: all .3s ease-in;
+
+    &--body {
+      height: 100%;
+      width: #{scaleValue(1000)};
+      background: #1F1D2B;
+      padding: #{scaleValue(130)};
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    & figure {
+      width: #{scaleValue(600)};
     }
   }
 }
