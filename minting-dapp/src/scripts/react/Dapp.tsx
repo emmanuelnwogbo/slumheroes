@@ -15,6 +15,10 @@ import Footer from './Footer';
 import MobileHeader from './mobile/MobileHeader';
 import MobileJumbotron from './mobile/MobileJumbotron';
 import MobileStory from './mobile/MobileStory';
+import MobileMission from './mobile/MobileMission';
+import MobileFaq from './mobile/MobileFaq';
+import MobileCoreTeam from './mobile/MobileCoreTeam';
+import MobileFooter from './mobile/MobileFooter';
 import CollectionStatus from './CollectionStatus';
 import MintWidget from './MintWidget';
 import Whitelist from '../lib/Whitelist';
@@ -170,6 +174,10 @@ export default class Dapp extends React.Component<Props, State> {
           <MobileHeader />
           <MobileJumbotron />
           <MobileStory />
+          <MobileMission />
+          <MobileFaq />
+          <MobileCoreTeam />
+          <MobileFooter />
         </div>
       </>
     );

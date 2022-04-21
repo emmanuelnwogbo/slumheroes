@@ -1,0 +1,32 @@
+.mobilefooter {
+  margin-top: #{scaleValue(400)};
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: #{scaleValue(25)} 0;
+  padding-bottom: #{scaleValue(80)};
+
+  &__left {
+    display: flex;
+    margin-bottom: #{scaleValue(100)};
+
+    & span {
+      display: inline-block;
+      margin-right: #{scaleValue(100)};
+      cursor: pointer;
+      color: #F2F2F2;
+      width: #{scaleValue(120)};
+      height: #{scaleValue(120)};
+    }
+  }
+
+  &__right {
+    
+    & p {
+      color: #F2F2F2;
+      opacity: .6;
+      font-size: #{scaleValue(50)};
+    }
+  }
+}

@@ -2,9 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: #{scaleValue(130)} 0;
-  position: relative;
+  padding: #{scaleValue(130)} #{scaleValue(90)};
+  position: fixed;
   z-index: 7;
+  width: 100vw;
+  height: #{scaleValue(130)};
+  left: 0;
+  top: 0;
+  background: #1F1D2B;
 
   &__left {
 
@@ -53,5 +58,15 @@
     & figure {
       width: #{scaleValue(600)};
     }
+  }
+
+  &__sidenavitems {
+    margin-top: #{scaleValue(400)};
+  }
+
+  &__sidenavitem {
+    text-transform: uppercase;
+    margin-bottom: #{scaleValue(100)};
+    font-size: #{scaleValue(86)};
   }
 }

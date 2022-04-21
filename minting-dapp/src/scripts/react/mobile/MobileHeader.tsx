@@ -9,7 +9,7 @@ interface State {
 }
 
 const defaultState: State = {
-  sidenavopen: false
+  sidenavopen: false,
 };
 
 export default class MobileHeader extends React.Component<Props, State> {
@@ -53,6 +53,12 @@ export default class MobileHeader extends React.Component<Props, State> {
             <figure>
               <img src="/build/images/SlumHeroes.svg" alt="SVG as an image" />
             </figure>
+            <div className="mobileheader__sidenavitems">
+              <div className="mobileheader__sidenavitem">home</div>
+              <div className="mobileheader__sidenavitem">join the club</div>
+              <div className="mobileheader__sidenavitem">road map</div>
+              <div className="mobileheader__sidenavitem">faq</div>
+            </div>
           </div>
         </div>
       </div>
