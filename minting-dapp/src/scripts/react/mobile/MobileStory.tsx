@@ -34,7 +34,7 @@ export default class MobileStory extends React.Component<Props, State> {
         </div>
         <div className="mobilestory__photo">
           <figure>
-              <img src="/build/images/storyrectangle.svg"/>
+              <img src="/build/images/Rectanglestory.png"/>
           </figure>
           <figure>
               <img src="/build/images/boywithtrophy.svg"/>

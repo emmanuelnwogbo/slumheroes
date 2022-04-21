@@ -28,7 +28,7 @@ export default class MobileJumbotron extends React.Component<Props, State> {
         </div>
         <div className="mobilejumbotron__nftsample">
             <figure>
-              <img src="/build/images/Rectangle.svg"/>
+              <img src="/build/images/Rectangle.png"/>
             </figure>
             <figure>
               <img src="/build/images/nftpreview.svg"/>
