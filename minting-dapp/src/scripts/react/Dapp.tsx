@@ -14,6 +14,7 @@ import CoreTeam from './CoreTeam';
 import Footer from './Footer';
 import MobileHeader from './mobile/MobileHeader';
 import MobileJumbotron from './mobile/MobileJumbotron';
+import MobileStory from './mobile/MobileStory';
 import CollectionStatus from './CollectionStatus';
 import MintWidget from './MintWidget';
 import Whitelist from '../lib/Whitelist';
@@ -168,6 +169,7 @@ export default class Dapp extends React.Component<Props, State> {
         <div className="mobile">
           <MobileHeader />
           <MobileJumbotron />
+          <MobileStory />
         </div>
       </>
     );
