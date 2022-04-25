@@ -34,6 +34,10 @@ export default class MobileJumbotron extends React.Component<Props, State> {
               <img src="/build/images/nftpreview.svg"/>
             </figure>
         </div>
+        <div className="mobilestory__text--para">
+             <p>Slum heroes is a collection of 10000 randomly generated NFTs. Our goal is to create onchain and IRL( in real life) social impact. We are set to prove that web3 can indeed change the dynamics of the world as we see.</p>
+          </div>
+          
         <div className="mobilejumbotron__learnmore">
           <button>Learn more</button>
         </div>

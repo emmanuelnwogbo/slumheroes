@@ -30,6 +30,7 @@
     justify-content: center;
     height: #{scaleValue(1200)};
     width: #{scaleValue(1200)};
+    margin-bottom: #{scaleValue(250)};
 
     & figure {
       position: absolute;
