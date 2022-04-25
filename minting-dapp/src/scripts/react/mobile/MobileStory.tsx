@@ -26,7 +26,7 @@ export default class MobileStory extends React.Component<Props, State> {
         <div className="mobilestory__text">
           <h2 className="mobilestory__text--h2">the story begins</h2>
           <div className="mobilestory__text--para">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit rutrum. Quisque malesuada accumsan ante, porttitor eleifend nisl mollis pretium. Proin magna leo, laoreet rhoncus metus finibus, consectetur rhoncus mauris. Sed feugiat, neque quis mattis imperdiet, libero diam lobortis metus, non accumsan enim orci at purus. </p>
+            <p>Within Chess in Slums, the meaning of growth has changed over the course of our history. A business poised for growth may find its humble beginnings in a garage, but it can not live there forever. A non-profit achieves its goals not by defining itself through limitation, but by pushing the boundaries of what is possible... </p>
           </div>
           <span className="mobilestory__learnmore">
             <button>Learn more</button>

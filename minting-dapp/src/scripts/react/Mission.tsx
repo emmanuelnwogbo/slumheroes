@@ -20,7 +20,7 @@ export default class Mission extends React.Component<Props, State> {
   }
 
   private nextSlide(): void {
-    if (this.state.currentThing === 4) {
+    if (this.state.currentThing === 3) {
       let next = 1;
       this.setState({
         currentThing: next
@@ -46,9 +46,9 @@ export default class Mission extends React.Component<Props, State> {
               this.state.currentThing === 1 ? 'currentthing mission__slide' : this.state.currentThing > 2 ? 'notcurrentthing mission__slide' : 'previousthing mission__slide'}>
               <div className="mission__slideleft">
                 <div className="mission__slideleft">
-                  <h2>Phase 1</h2>
+                  <h2>Social Impact</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
+                  Building and expanding the chess in a slum initiative to reach and change lives on a broader scale
                   </p>
                 </div>
               </div>
@@ -62,9 +62,9 @@ export default class Mission extends React.Component<Props, State> {
               this.state.currentThing === 2 ? 'currentthing mission__slide' : this.state.currentThing > 2 ? 'previousthing mission__slide' : 'notcurrentthing mission__slide' }>
               <div className="mission__slideleft">
                 <div className="mission__slideleft">
-                  <h2>Phase 2</h2>
+                  <h2>On-chain utility</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
+                  we would like to explore the use case of story telling and documentation on the blockchain. ( from comic books, animated series, technology for social change etc.)
                   </p>
                 </div>
               </div>
@@ -78,25 +78,9 @@ export default class Mission extends React.Component<Props, State> {
               this.state.currentThing === 3 ? 'currentthing mission__slide' : this.state.currentThing > 3 ? 'previousthing mission__slide' : 'notcurrentthing mission__slide' }>
               <div className="mission__slideleft">
                 <div className="mission__slideleft">
-                  <h2>Phase 3</h2>
+                  <h2>Community</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
-                  </p>
-                </div>
-              </div>
-              <div className="mission__slideright">
-                <figure>
-                  <img src="/build/images/unsplash.png"/>
-                </figure>
-              </div>
-            </div>
-            <div className={
-              this.state.currentThing === 4 ? 'currentthing mission__slide' : this.state.currentThing === 1 ? 'previousthing mission__slide' : 'notcurrentthing mission__slide' }>
-              <div className="mission__slideleft">
-                <div className="mission__slideleft">
-                  <h2>Phase 4</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
+                  We want to build a community of people that are willing to be a part of something big . A community of impact makers that believe in utilizing web3.0 for social change and good.
                   </p>
                 </div>
               </div>

@@ -27,7 +27,7 @@ export default class Jumbotron extends React.Component<Props, State> {
             <h2 className="jumbotron__left--h2">slum heroes</h2>
             <span className="jumbotron__left--paragraph">
               <p>
-                In aenean posuere lorem risus nec. Tempor tincidunt aenean purus purus vestibulum nibh mi venenatis
+              Slum heroes is a collection of 10000 randomly generated NFTs. Our goal is to create onchain and IRL( in real life) social impact. We are set to prove that web3 can indeed change the dynamics of the world as we see.
               </p>
             </span>
             <div className="jumbotron__left--btns">

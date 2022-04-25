@@ -34,7 +34,7 @@ export default class Story extends React.Component<Props, State> {
               </figure>
             </div>
             <div className="story__contentright">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit rutrum. Quisque malesuada accumsan ante, porttitor eleifend nisl mollis pretium. Proin magna leo, laoreet rhoncus metus finibus, consectetur rhoncus mauris. Sed feugiat, neque quis mattis imperdiet, libero diam lobortis metus, non accumsan enim orci at purus. </p>
+              <p>Within Chess in Slums, the meaning of growth has changed over the course of our history. A business poised for growth may find its humble beginnings in a garage, but it can not live there forever. A non-profit achieves its goals not by defining itself through limitation, but by pushing the boundaries of what is possible... </p>
               <span className="story__contentright--btn">
                 <button className="story__contentright--learnmorebtn">Learn more</button>
               </span>

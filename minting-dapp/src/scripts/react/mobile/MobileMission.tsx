@@ -27,53 +27,40 @@ export default class MobileMission extends React.Component<Props, State> {
         <div className="mobilemission__items">
           <div className="mobilemission__item">
             <div className="mobilemission__item--header">
-              <p>Phase 1</p>
+              <p>Social Impact</p>
             </div>
             <figure className="mobilemission__item--fig">
               <img src="/build/images/unsplash.png"/>
             </figure>
             <div className="mobilemission__item--paragraph">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
+              Building and expanding the chess in a slum initiative to reach and change lives on a broader scale.
               </p>
             </div>  
           </div>
           <div className="mobilemission__item">
             <div className="mobilemission__item--header">
-              <p>Phase 2</p>
+              <p>On-chain utility</p>
             </div>
             <figure className="mobilemission__item--fig">
               <img src="/build/images/unsplash.png"/>
             </figure>
             <div className="mobilemission__item--paragraph">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
+              we would like to explore the use case of story telling and documentation on the blockchain. ( from comic books, animated series, technology for social change etc.)
               </p>
             </div>  
           </div>
           <div className="mobilemission__item">
             <div className="mobilemission__item--header">
-              <p>Phase 3</p>
+              <p>Community</p>
             </div>
             <figure className="mobilemission__item--fig">
               <img src="/build/images/unsplash.png"/>
             </figure>
             <div className="mobilemission__item--paragraph">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
-              </p>
-            </div>  
-          </div>
-          <div className="mobilemission__item">
-            <div className="mobilemission__item--header">
-              <p>Phase 4</p>
-            </div>
-            <figure className="mobilemission__item--fig">
-              <img src="/build/images/unsplash.png"/>
-            </figure>
-            <div className="mobilemission__item--paragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat hendrerit a maximus augue porttitor.
+              We want to build a community of people that are willing to be a part of something big . A community of impact makers that believe in utilizing web3.0 for social change and good.
               </p>
             </div>  
           </div>
