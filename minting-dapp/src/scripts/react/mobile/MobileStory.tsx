@@ -23,6 +23,11 @@ export default class MobileStory extends React.Component<Props, State> {
     return (
       <>
       <div className="mobilestory">
+      <div className="mobilestory__text">
+          <div className="mobilestory__text--para">
+             <p>Slum heroes is a collection of 10000 randomly generated NFTs. Our goal is to create onchain and IRL( in real life) social impact. We are set to prove that web3 can indeed change the dynamics of the world as we see.</p>
+          </div>
+        </div>
         <div className="mobilestory__text">
           <h2 className="mobilestory__text--h2">the story begins</h2>
           <div className="mobilestory__text--para">
