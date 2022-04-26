@@ -28,7 +28,7 @@ export default class Faq extends React.Component<Props, State> {
           </div>
           <div className="faq__content">
             <div>Collection Size - 10,000</div>
-            <div>Mint Prize - 0.04ETH</div>
+            <div>Mint Prize - 0.05ETH</div>
             <div>CHAIN - ETHEREUM</div>
             <div className="faq__btn">
               <button className="faq__btn--btn">Learn more</button>

@@ -26,7 +26,7 @@ export default class MobileFaq extends React.Component<Props, State> {
           <h2>Faq</h2>
           <div className="mobilefaq__items">
             <span>Collection Size - 10,000</span>
-            <span>Mint Prize - 0.04ETH</span>
+            <span>Mint Prize - 0.05ETH</span>
             <span>CHAIN - ETHEREUM</span>
           </div>
         </div>
