@@ -13,11 +13,18 @@
 
     & span {
       display: inline-block;
-      margin-right: #{scaleValue(100)};
+      margin-right: #{scaleValue(200)};
       cursor: pointer;
-      color: #F2F2F2;
-      width: #{scaleValue(120)};
-      height: #{scaleValue(120)};
+
+      & a {
+
+        & svg {
+          fill: #F2F2F2;
+          width: #{scaleValue(120)};
+          height: #{scaleValue(120)};
+          opacity: .6;
+        }
+      }
     }
   }
 

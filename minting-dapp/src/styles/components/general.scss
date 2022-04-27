@@ -15,6 +15,7 @@ body {
     color: #fff;
     background: #1F1D2B;
     padding: 0 #{scaleValue(90)};
+    overflow-x: hidden;
 }
 
 html {
@@ -24,7 +25,6 @@ html {
 .desktop {
   @media only screen and (max-width: 414px) { 
     display: none;
-    //padding: #{scaleValue(75)} #{scaleValue(75)};
   } 
 }
 

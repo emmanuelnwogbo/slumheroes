@@ -26,9 +26,9 @@
     & span {
       display: inline-block;
       background: #fff;
-      margin-bottom: #{scaleValue(17)};
-      height: #{scaleValue(10)};
-      width: #{scaleValue(96)};
+      margin-bottom: #{scaleValue(27)};
+      height: #{scaleValue(15)};
+      width: #{scaleValue(140)};
       border-radius: 2rem;
     }
   }
@@ -38,7 +38,6 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: #{scaleValue(1000)};
     width: 100vw;
     background: rgba(#1F1D2B, .4);
     transform: translateX(-100%);
@@ -46,7 +45,7 @@
 
     &--body {
       height: 100%;
-      width: #{scaleValue(1000)};
+      width: #{scaleValue(1200)};
       background: #1F1D2B;
       padding: #{scaleValue(130)};
     }
@@ -68,5 +67,18 @@
     text-transform: uppercase;
     margin-bottom: #{scaleValue(100)};
     font-size: #{scaleValue(86)};
+
+    &--socials {
+      margin-top: #{scaleValue(300)};
+    }
+
+    &--social {
+
+      & svg {
+        height: #{scaleValue(150)};
+        width: #{scaleValue(150)};
+        fill: rgb(29, 155, 240);
+      }
+    }
   }
 }

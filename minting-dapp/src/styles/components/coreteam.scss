@@ -39,6 +39,30 @@
 
       & p {
         font-size: #{scaleValue(18)};
+
+        &.role {
+          opacity: .6;
+          font-size: #{scaleValue(15)} !important;
+        }
+      }
+    }
+
+    &--name {
+      display: flex;
+      align-items: center;
+
+      & p {
+        margin-right: #{scaleValue(10)};
+      }
+
+      & a {
+        text-decoration: none;
+
+        & svg {
+          height: #{scaleValue(15)};
+          width: #{scaleValue(15)};
+          fill: #fff;
+        }
       }
     }
   }

@@ -55,6 +55,21 @@
       height: #{scaleValue(1200)};
       width: #{scaleValue(1200)};
 
+      &:nth-child(1) {
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: #{scaleValue(-40)};
+          right: #{scaleValue(-20)};
+          background: rgba(24, 178, 222, 1);
+          height: #{scaleValue(400)};
+          width: #{scaleValue(200)};
+          filter: blur(4rem);
+          z-index: -1;
+        }
+      }
+
       &:nth-child(2) {
         
         & img {

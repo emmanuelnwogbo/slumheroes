@@ -30,10 +30,26 @@
       height: #{scaleValue(548)};
       width: #{scaleValue(504)};
 
+
       & img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+
+      &:nth-child(1) {
+        
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: #{scaleValue(-40)};
+          right: #{scaleValue(-60)};
+          background: rgba(24, 178, 222, 1);
+          height: #{scaleValue(60)};
+          width: #{scaleValue(90)};
+          filter: blur(4rem);
+          z-index: -1;
+        }
       }
 
       &:nth-child(2) {

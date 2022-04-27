@@ -8,6 +8,17 @@
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: top left
+  }
+
+  100% {
+    background-position: top right
+  }
+}
+  
+
 .jumbotron {
   display: flex;
   justify-content: space-between;
@@ -68,6 +79,33 @@
       & img {
         height: 100%;
         width: 100%;
+      }
+
+      &:nth-child(1) {
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: #{scaleValue(-40)};
+          left: #{scaleValue(-60)};
+          background: rgba(251, 55, 255, 1);
+          height: #{scaleValue(60)};
+          width: #{scaleValue(90)};
+          filter: blur(4rem);
+          z-index: -1;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: #{scaleValue(-40)};
+          right: #{scaleValue(-60)};
+          background: rgba(24, 178, 222, 1);
+          height: #{scaleValue(60)};
+          width: #{scaleValue(90)};
+          filter: blur(4rem);
+          z-index: -1;
+        }
       }
 
       &:nth-child(2) {

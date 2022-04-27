@@ -3,6 +3,7 @@
   align-items: center;
   padding: #{scaleValue(30)} 0;
   text-transform: uppercase;
+  position: relative;
 
   &__name {
     margin-right: #{scaleValue(300)};
@@ -24,7 +25,22 @@
     display: inline-block;
     margin-left: #{scaleValue(70)};
     cursor: pointer;
-    font-weight: 500;;
+    font-weight: 500;
+
+    &--social {
+      
+      & svg {
+        height: #{scaleValue(35)};
+        width: #{scaleValue(35)};
+        fill: rgb(29, 155, 240);
+      }
+    }
+
+    &--socials {
+      position: absolute;
+      top: #{scaleValue(25)};
+      right: #{scaleValue(150)};
+    }
 
     &--focus {
       position: relative;

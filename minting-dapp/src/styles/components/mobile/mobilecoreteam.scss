@@ -47,5 +47,31 @@
         font-size: #{scaleValue(80)};
       }
     }
+
+    &--name {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      & p {
+        margin-right: #{scaleValue(40)};
+      }
+
+      & span {
+        text-decoration: none;
+
+        & svg {
+          fill: #F2F2F2;
+          height: #{scaleValue(100)};
+          width: #{scaleValue(100)};
+        }
+      }
+    }
+
+    &--role {
+      width: #{scaleValue(850)};
+      opacity: .6;
+      font-size: #{scaleValue(70)} !important;
+    }
   }
 }
